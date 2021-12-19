@@ -37,8 +37,8 @@ def compare_index(list_1: list, list_2: list) -> list:
             count += 1
     return count
 
-
-#print(random_colors(8, colors))
-
-#x = choice_user(2)
-print(len(colors))
+x = random_colors(4, colors)
+y = choice_user(4)
+print(x)
+print(y)
+print(compare_index(x, y))

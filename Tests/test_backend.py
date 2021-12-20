@@ -12,10 +12,3 @@ overlap = bc.inside_the_list(ch_user, ran)
 print(comp, 'Comparison of indexes')
 print(overlap, 'Overlap')
 print((overlap - comp), 'True overlap')
-
-
-
-
-
-
-

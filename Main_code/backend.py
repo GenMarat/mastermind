@@ -46,9 +46,18 @@ def inside_the_list(what_search: list, where_search: list) -> list:
 
 def main():
     ran_list = random_colors(4, colors)
+    count = 0
     while True:
         choice_list = choice_user(4)
         index = compare_index(choice_list, ran_list)
         inside = inside_the_list(choice_list, ran_list)
-        print('Правильный цвет в правильной позиции: ', index)
-        print('Правильный цвет в неправильной позиции: ', inside - index)
+        count += 1
+        if index == 4:
+            print('Сongratulations!\nYou guessed the colors in', count, 'moves')
+            break
+        else:
+            print('Правильный цвет в правильной позиции: ', index)
+            print('Правильный цвет в неправильной позиции: ', inside - index)
+
+if __name__ == '__main__':
+    main()

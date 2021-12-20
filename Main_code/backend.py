@@ -54,10 +54,13 @@ def main():
         count += 1
         if index == 4:
             print('Сongratulations!\nYou guessed the colors in', count, 'moves')
+            print()
             break
         else:
+            print(ran_list)
             print('Правильный цвет в правильной позиции: ', index)
             print('Правильный цвет в неправильной позиции: ', inside - index)
+            print()
 
 if __name__ == '__main__':
     main()

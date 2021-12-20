@@ -44,8 +44,11 @@ def inside_the_list(what_search: list, where_search: list) -> list:
             count += 1
     return count
 
-'''x = random_colors(4, colors)
-y = choice_user(4)
-print(x)
-print(y)
-print(compare_index(x, y))'''
+def main():
+    ran_list = random_colors(4, colors)
+    while True:
+        choice_list = choice_user(4)
+        index = compare_index(choice_list, ran_list)
+        inside = inside_the_list(choice_list, ran_list)
+        print('Правильный цвет в правильной позиции: ', index)
+        print('Правильный цвет в неправильной позиции: ', inside - index)

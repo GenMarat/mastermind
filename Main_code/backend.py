@@ -39,13 +39,13 @@ def compare_index(list_1: list, list_2: list) -> list:
 
 def inside_the_list(what_search: list, where_search: list) -> list:
     count = 0
-    for i in range(what_search):
+    for i in what_search:
         if i in where_search:
             count += 1
     return count
 
-x = random_colors(4, colors)
+'''x = random_colors(4, colors)
 y = choice_user(4)
 print(x)
 print(y)
-print(compare_index(x, y))
+print(compare_index(x, y))'''

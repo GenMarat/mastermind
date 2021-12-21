@@ -23,6 +23,7 @@ def choice_user(count: int) -> int:
     for i in range(count):
         while True:
             choice = input('Choice color: ')
+            choice = choice.lower()
             if choice in ['r', 'g', 'b', 'y', 'o', 'w', 'p', 'v']:
                 list_choice.append(choice)
                 break
